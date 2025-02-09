@@ -8,7 +8,7 @@ The Prediction Model solves a prediction problem. Which is highly dependant on d
 Below is an Illustration of how the model is used. The user enters the study hours, sleep hours and class room attendance rate after which they click on Predict Grade
 <br/><br/>
 <img src="./Images/pic2.png"/>
-<br/><br/>
+<br/>
 And the prediction results are displayed on the next page.
 <br/><br/>
 <img src="./Images/pic1.png"/>
