@@ -1,0 +1,38 @@
+﻿@page
+@model StudentGradesApp.Pages.ResultModel
+@{
+}
+
+<div class="results">
+  <div class="inputs">
+    <div class="Value">
+        <div class="heading">
+            Study Hours
+        </div>
+        <div class="result">
+                @Model._modelOutput?.StudyHours
+        </div>
+    </div>
+    <div class="Value">
+        <div class="heading">
+            Sleep Hours
+        </div>
+        <div class="result">
+                @Model._modelOutput?.SleepHours
+        </div>
+    </div>
+    <div class="Value">
+        <div class="heading">
+            Class Attendance(%)
+        </div>
+        <div class="result">
+                @Model._modelOutput?.Attendance
+        </div>
+    </div>
+   </div>
+   <div class="Outputs">
+       <div class="heading-result">Predicated Grade</div>
+        <div class="grade">@Model.Grade</div>
+   </div>
+   
+</div>

@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h5 class="display-4">Student Grade Prediction Model</h5>
+    <p>This is a Prediction Model that predicts a students potential grade factoring in their study hours, sleep hours and class attendance.
+        <br />Enter student study details below.
+    </p>
+    
+</div>
+<div class="form-field">
+<form method="post" asp-controller="Home" asp-action="MakePrediction"> 
+    <div class="form-input">
+        <label class="form-label">
+            Study Hours*
+        </label>
+        <input name="studyHours" class="input-group"/>
+    </div>
+    <div class="form-input">
+        <label class="form-label">
+            Sleep Hours*
+        </label>
+        <input name="sleepHours" class="input-group" />
+    </div>
+    <div class="form-input">
+        <label class="form-label">
+            Class Attendance(%)*
+        </label>
+        <input name="attendance" class="input-group" />
+    </div>
+    <input type="submit" value="Predict Grade" class="btn btn-info btn-lg form-input"/>
+</form>
+</div>
